@@ -14,26 +14,33 @@
                 </div>
             </form>
 
-            <div class="card w-100 my-4">
-                <div class="card-body">
-                  <h3 class="card-title">Card title</h3>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
+            @foreach ($posts as $post)
+                <a href="/forum/post/{{ $post->slug }}" class="text-decoration-none text-dark">
+                    <div class="card w-100 my-4">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ $post->title }}</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ $post->user->username }}</h6>
+                            <p class="card-text">{{ Str::limit($post->content, 150) }}</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </a>
+            @endforeach
+
         </div>
         <div class="col-4 border-start">
             <a href="/forum/create">
-                <button type="button" class="btn btn-primary btn-lg text-white mb-3"><i class="bi bi-plus me-2"></i>Create Post</button>
+                <button type="button" class="btn btn-primary btn-lg text-white mb-3"><i class="bi bi-plus me-2"></i>Create
+                    Post</button>
             </a>
             <div class="card w-100 text-white bg-dark">
-                <div class="card-body">
-                  <h3 class="card-title">Aradhana Indra Daniswara</h3>
-                  <p class="card-text">Member since 9/12/2022</p>
+                <div class="card-body text-center">
+                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle mb-3" width="100px" height="100px" style="object-fit: cover">
+                    <h3 class="card-title">Aradhana Indra Daniswara</h3>
+                    <p class="card-text">Member since 9/12/2022</p>
                 </div>
-              </div>
+            </div>
         </div>
 
 
