@@ -12,4 +12,8 @@ class ForumController extends Controller
             'posts' => Post::latest()->paginate(25)->withQueryString()
         ]);
     }
+
+    public function create(){
+        return view('forum.create');
+    }
 }

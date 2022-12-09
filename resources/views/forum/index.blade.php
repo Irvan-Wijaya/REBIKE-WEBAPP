@@ -29,7 +29,7 @@
             @endforeach
 
         </div>
-        <div class="col-4 border-start">
+        <div class="col-4">
             <a href="/forum/create" class="text-decoration-none">
                 <div class="d-grid mb-3">
                     <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center" type="button">
@@ -37,13 +37,15 @@
                     </button>
                 </div>
             </a>
-            <div class="card w-100 text-white bg-dark">
-                <div class="card-body text-center">
-                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle mb-3" width="100px" height="100px" style="object-fit: cover">
-                    <h3 class="card-title fw-normal">Aradhana Indra Daniswara</h3>
-                    <p class="card-text">Member since 9/12/2022</p>
+            <a class="d-flex align-items-center gap-3 mb-4 text-decoration-none text-dark">
+                <div>
+                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle mb-3" width="75px" height="75px" style="object-fit: cover">
                 </div>
-            </div>
+                <div class="">
+                    <h5 class="card-title fw-bold">Aradhana Indra Daniswara</h5>
+                    <p class="card-text">aradhanaid</p>
+                </div>
+            </a>
         </div>
 
 
