@@ -20,7 +20,8 @@ class UserSeeder extends Seeder
             'name' => 'Aradhana Indra Daniswara',
             'email' => 'aradhanaindradev@gmail.com',
             'password' => bcrypt('password'),
-            'image' => 'aradhanaid.png'
+            'image' => 'aradhanaid.png',
+            'is_admin' => false
         ]);
     }
 }

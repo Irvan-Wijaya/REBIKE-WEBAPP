@@ -16,12 +16,22 @@ composer install
 npm install
 ```
 
-Step 2 - Launch Vite
+Step 2 - Migrate Database
+```
+php artisan migrate:fresh --seed
+```
+
+Step 3 - Link Laravel Storage to Public
+```
+php artisan storage:link
+```
+
+Step 4 - Launch Vite
 ```
 npm run dev
 ```
 
-Step 3 - Start Laravel
+Step 5 - Start Laravel
 ```
 php artisan serve
 ```
