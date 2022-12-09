@@ -30,14 +30,17 @@
 
         </div>
         <div class="col-4 border-start">
-            <a href="/forum/create">
-                <button type="button" class="btn btn-primary btn-lg text-white mb-3"><i class="bi bi-plus me-2"></i>Create
-                    Post</button>
+            <a href="/forum/create" class="text-decoration-none">
+                <div class="d-grid mb-3">
+                    <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center" type="button">
+                        <i class="bi bi-plus me-2 h3 my-0" ></i><span class="h4 my-0">Create Post</span>
+                    </button>
+                </div>
             </a>
             <div class="card w-100 text-white bg-dark">
                 <div class="card-body text-center">
                     <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle mb-3" width="100px" height="100px" style="object-fit: cover">
-                    <h3 class="card-title">Aradhana Indra Daniswara</h3>
+                    <h3 class="card-title fw-normal">Aradhana Indra Daniswara</h3>
                     <p class="card-text">Member since 9/12/2022</p>
                 </div>
             </div>
