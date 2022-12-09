@@ -5,7 +5,7 @@
         <div class="col">
             <form action="/forum/search" method="POST">
                 @csrf
-                <div class="input-group w-100">
+                <div class="input-group w-100 ">
                     <input type="text" class="form-control p-3" placeholder="Search Topics" aria-label="Search Topics"
                         aria-describedby="button-addon2" name="search" value="{{ request('search') }}">
                     <button class="btn btn-outline-primary px-4" type="submit" id="button-addon2">
@@ -19,10 +19,13 @@
                     <div class="card w-100 my-4">
                         <div class="card-body">
                             <h4 class="card-title">{{ $post->title }}</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ $post->user->username }}</h6>
-                            <p class="card-text">{{ Str::limit($post->content, 150) }}</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h6 class="card-subtitle mb-3 text-muted">{{ $post->user->username }}</h6>
+                            <p class="card-text mb-3">{{ Str::limit($post->content, 150) }}</p>
+                            <div class="d-flex">
+                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i class="bi bi-hand-thumbs-up me-2"></i>Like</a>
+                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i class="bi bi-hand-thumbs-down me-2" ></i>Dislike</a>
+                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i class="bi bi-chat-left-text me-2" ></i>Comments</a>
+                            </div>
                         </div>
                     </div>
                 </a>
