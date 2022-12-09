@@ -17,7 +17,13 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->realText($maxNbChars = 100),
+            'content' => $this->faker->realText($maxNbChars = 300),
+            'slug' => $this->faker->slug(),
+            'user_id' => 1,
+            'like_count' => 0,
+            'dislike_count' => 0,
+            'comment_count' => 0,
         ];
     }
 }

@@ -6,7 +6,7 @@
             <form action="/forum/search" method="POST">
                 @csrf
                 <div class="input-group w-100">
-                    <input type="text" class="form-control" placeholder="Search Topics" aria-label="Search Topics"
+                    <input type="text" class="form-control p-3" placeholder="Search Topics" aria-label="Search Topics"
                         aria-describedby="button-addon2" name="search" value="{{ request('search') }}">
                     <button class="btn btn-outline-primary px-4" type="submit" id="button-addon2">
                         <i class="bi bi-search"></i>
@@ -31,8 +31,7 @@
             <div class="card w-100 text-white bg-dark">
                 <div class="card-body">
                   <h3 class="card-title">Aradhana Indra Daniswara</h3>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">Member since 9/12/2022</p>
                 </div>
               </div>
         </div>

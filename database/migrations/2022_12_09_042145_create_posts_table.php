@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->foreignId('user_id');
-            $table->string('content');
+            $table->longText('content');
             $table->integer('like_count');
             $table->integer('dislike_count');
             $table->integer('comment_count');
