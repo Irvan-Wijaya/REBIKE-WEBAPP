@@ -21,3 +21,8 @@ Route::get('/', function () {
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create']);
+
+
+Route::get('/register', function () {
+    return view('register');
+});
