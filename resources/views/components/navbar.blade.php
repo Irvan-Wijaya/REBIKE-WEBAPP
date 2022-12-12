@@ -15,8 +15,8 @@
                 <img src="{{ url('/Images/REBIKE_LOGO.png') }}" alt="" width="100" height="40">
             </a>
             <ul class="nav justify-content-center">
-                <li class="nav-item ">
-                    <a class="nav-link text-dark fw-bold active" aria-current="page" href="#">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
