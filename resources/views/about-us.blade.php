@@ -2,20 +2,117 @@
 
 @section('content')
     <div class="wrapper-about-us">
-        {{-- Right Text --}}
-        <div class="wrapper-right">
-            <div class="about-us-tt">
-                <div class="about-us-title fs-1 fw-bold mb-5">
-                    About Us <br>
+        <div data-aos="fade-up" class="wrapper-top d-flex align-items-center" style="height: 100vh">
+            {{-- Right Text --}}
+            <div class="wrapper-right">
+                <div class="about-us-tt">
+                    <div class="about-us-title fs-1 fw-bold mb-5">
+                        About Us <br>
+                    </div>
+                    <div class="about-us-text w-50 mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum explicabo assumenda excepturi
+                        ipsa
+                        necessitatibus voluptatum praesentium adipisci asperiores perspiciatis, similique alias magnam nemo,
+                        corporis quos! Officia fugiat mollitia optio.
+                    </div>
                 </div>
-                <div class="about-us-text w-50 mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum explicabo assumenda excepturi ipsa
-                    necessitatibus voluptatum praesentium adipisci asperiores perspiciatis, similique alias magnam nemo,
-                    corporis quos! Officia fugiat mollitia optio.
-                </div>
+                <a href="#next">
+                    <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+                </a>
+                
             </div>
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            {{-- Content Left --}}
+            <div class="wrapper-left">
+                <lord-icon src="https://cdn.lordicon.com/pithnlch.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:200px;height:200px">
+                </lord-icon>
+            </div>
         </div>
 
+        {{-- Content Bottom --}}
+        <h1 id="next"></h1>
+        <h1 data-aos="fade-up" class="fw-bold pt-5">Services</h1>
+        <div data-aos="fade-up" class="content-bottom d-flex justify-content-between" style="height: 50vh">
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/mdgrhyca.json" trigger="loop" delay="1500"
+                    colors="primary:#37b6ff,secondary:#08a88a" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-5">
+                        5 Star Service
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/kbtmbyzy.json" trigger="hover"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-5">
+                        24 Hours Service
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="hover"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-3">
+                        24 Hours Consultations
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {{-- Team --}}
+        <h1 data-aos="fade-up" class="fw-bold mt-5">Our Teams</h1>
+        <div data-aos="fade-up" class="team d-flex justify-content-between align-items-center" style="height: 50vh">
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-2">
+                        Aradhana Indra Daniswara
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-5">
+                        Irvan Wijaya
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-5">
+                        Jasson Laurent
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                </lord-icon>
+                <div class="card-body">
+                    <p class="card-text ms-2">
+                        Vincentius Marco Melandri
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

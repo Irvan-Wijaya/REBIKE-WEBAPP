@@ -19,6 +19,7 @@
         @yield('content')
     </div>
     @include('components.footer')
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
