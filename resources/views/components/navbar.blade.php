@@ -11,12 +11,12 @@
 <body>
     <nav class="navbar navbar-light">
         <div class="nv container-fluid">
-            <a class="navbar-brand ms-2" href="#">
+            <a class="navbar-brand ms-2" href="{{ url('home') }}">
                 <img src="{{ url('/Images/REBIKE_LOGO.png') }}" alt="" width="100" height="40">
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="{{ url('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
