@@ -16,13 +16,13 @@
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="{{ url('home') }}">Home</a>
+                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">About Us</a>
+                    <a class="nav-link text-dark fw-bold" href="{{ url('about-us') }}">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="#">Store</a>
@@ -36,7 +36,7 @@
             </ul>
             <div class="d-grid gap-2 d-md-block">
                 <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
-                <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign in</button>
+                <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
             </div>
         </div>
     </nav>
