@@ -35,8 +35,13 @@
                 </li>
             </ul>
             <div class="d-grid gap-2 d-md-block">
-                <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
-                <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
+                <a href="{{ url('login') }}">
+                    <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
+                </a>
+                <a href="{{ url('register') }}">
+                    <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
+                </a>
+                
             </div>
         </div>
     </nav>

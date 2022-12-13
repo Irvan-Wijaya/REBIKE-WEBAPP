@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ForumController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,7 @@ Route::get('/faq', function () {
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
