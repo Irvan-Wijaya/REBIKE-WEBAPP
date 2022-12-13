@@ -8,7 +8,8 @@
             </h1>
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>
-                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle" width="75px" height="75px" style="object-fit: cover">
+                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle" width="75px"
+                        height="75px" style="object-fit: cover">
                 </div>
                 <div>
                     <h5 class="card-title fw-bold">Aradhana Indra Daniswara</h5>
@@ -20,7 +21,7 @@
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title" aria-describedby="title" name="title">
-                  </div>
+                </div>
                 <div class="mb-3">
                     <label for="body" class="form-label">Body</label>
                     <input id="body" type="hidden" name="body" value="{{ old('body') }}">
