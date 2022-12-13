@@ -28,7 +28,7 @@
                     <a class="nav-link text-dark fw-bold" href="#">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">FAQ</a>
+                    <a class="nav-link text-dark fw-bold" href="{{ url('faq') }}">FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="{{ url('forum') }}">Forum</a>

@@ -22,6 +22,10 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
+Route::get('/faq', function () {
+    return view('faq');
+});
+
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create']);

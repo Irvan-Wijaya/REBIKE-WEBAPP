@@ -19,7 +19,7 @@
                 <a href="#next">
                     <button type="button" class="btn btn-primary btn-lg">Learn More</button>
                 </a>
-                
+
             </div>
             {{-- Content Left --}}
             <div class="wrapper-left">
@@ -31,7 +31,7 @@
 
         {{-- Content Bottom --}}
         <h1 id="next"></h1>
-        <h1 data-aos="fade-up" class="fw-bold pt-5">Services</h1>
+        <h1 data-aos="fade-up" class="fw-bold pt-5">Our Services</h1>
         <div data-aos="fade-up" class="content-bottom d-flex justify-content-between" style="height: 50vh">
             <div class="card" style="width: 18rem; border: none;">
                 <lord-icon src="https://cdn.lordicon.com/mdgrhyca.json" trigger="loop" delay="1500"
@@ -68,49 +68,53 @@
         </div>
 
         {{-- Team --}}
-        <h1 data-aos="fade-up" class="fw-bold mt-5">Our Teams</h1>
-        <div data-aos="fade-up" class="team d-flex justify-content-between align-items-center" style="height: 50vh">
-            <div class="card" style="width: 18rem; border: none;">
-                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
-                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
-                </lord-icon>
-                <div class="card-body">
-                    <p class="card-text ms-2">
-                        Aradhana Indra Daniswara
-                    </p>
-                </div>
-            </div>
+        <div class="team">
+            <div class="wrapper-team d-flex flex-column align-items-center justify-content-center" style="height: 100vh">
+                <h1 data-aos="fade-up" class="fw-bold mt-5">Our Teams</h1>
+                <div data-aos="fade-up" class="d-flex justify-content-between align-items-center" style="height: 50vh">
+                    <div class="card" style="width: 18rem; border: none;">
+                        <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                            colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                        </lord-icon>
+                        <div class="card-body">
+                            <p class="card-text ms-2">
+                                Aradhana Indra Daniswara
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="card" style="width: 18rem; border: none;">
-                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
-                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
-                </lord-icon>
-                <div class="card-body">
-                    <p class="card-text ms-5">
-                        Irvan Wijaya
-                    </p>
-                </div>
-            </div>
+                    <div class="card" style="width: 18rem; border: none;">
+                        <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                            colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                        </lord-icon>
+                        <div class="card-body">
+                            <p class="card-text ms-5">
+                                Irvan Wijaya
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="card" style="width: 18rem; border: none;">
-                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
-                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
-                </lord-icon>
-                <div class="card-body">
-                    <p class="card-text ms-5">
-                        Jasson Laurent
-                    </p>
-                </div>
-            </div>
+                    <div class="card" style="width: 18rem; border: none;">
+                        <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                            colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                        </lord-icon>
+                        <div class="card-body">
+                            <p class="card-text ms-5">
+                                Jasson Laurent
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="card" style="width: 18rem; border: none;">
-                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
-                    colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
-                </lord-icon>
-                <div class="card-body">
-                    <p class="card-text ms-2">
-                        Vincentius Marco Melandri
-                    </p>
+                    <div class="card" style="width: 18rem; border: none;">
+                        <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                            colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
+                        </lord-icon>
+                        <div class="card-body">
+                            <p class="card-text ms-2">
+                                Vincentius Marco Melandri
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
             <form action="/forum/search" method="POST">
                 @csrf
                 <div class="input-group w-100 ">
-                    <input type="text" class="form-control p-3" placeholder="Search Topics" aria-label="Search Topics"
+                    <input type="text" class="form-control p-3" style="height: 65px" placeholder="Search Topics" aria-label="Search Topics"
                         aria-describedby="button-addon2" name="search" value="{{ request('search') }}">
                     <button class="btn btn-outline-primary px-4" type="submit" id="button-addon2">
                         <i class="bi bi-search"></i>
@@ -35,7 +35,7 @@
         <div class="col-4">
             <a href="/forum/create" class="text-decoration-none">
                 <div class="d-grid mb-3">
-                    <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center" type="button">
+                    <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center" style="border-radius: 50px" type="button">
                         <i class="bi bi-plus me-2 h3 my-0" ></i><span class="h4 my-0">Create Post</span>
                     </button>
                 </div>
