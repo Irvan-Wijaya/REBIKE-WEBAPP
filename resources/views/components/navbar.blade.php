@@ -16,7 +16,8 @@
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page" href="{{ url('/') }}">Home</a>
+                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page"
+                        href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
@@ -35,13 +36,30 @@
                 </li>
             </ul>
             <div class="d-grid gap-2 d-md-block">
-                <a href="{{ url('login') }}">
-                    <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
-                </a>
-                <a href="{{ url('register') }}">
-                    <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
-                </a>
-                
+                @if (Auth::user() != null)
+                    <div class="logout d-flex  align-items-center ">
+                        @auth
+                            <p class="mt-3 me-4">
+                                Welcome, {{ Auth::user()->name }}
+                            </p>
+                            <form action="/logout" method="POST">
+                                @csrf
+                                <button id="logout" class="btn btn-danger fw-bold">Logout</button>
+                            </form>
+                        @endauth
+                    </div>
+                @else
+                    <a href="{{ url('login') }}">
+                        <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
+                    </a>
+                    <a href="{{ url('register') }}">
+                        <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
+                    </a>
+                @endif
+
+
+
+
             </div>
         </div>
     </nav>

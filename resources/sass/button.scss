@@ -35,3 +35,21 @@
     cursor: pointer;
     color: white;
 }
+
+#logout {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: 0.5s;
+}
+
+#logout:hover {
+    box-shadow: inset 150px 0 0 0 red;
+    cursor: pointer;
+    color: white;
+}
