@@ -62,7 +62,8 @@ ul {
 .wrap-content-img{
     img{
         position: absolute;
-        width: 75vw;
+        max-width: 1320px;
+        width: 100%;
         margin-right: 10rem;
         border-radius: 15px;
     }

@@ -10,10 +10,8 @@
                         About Us <br>
                     </div>
                     <div class="about-us-text w-50 mb-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum explicabo assumenda excepturi
-                        ipsa
-                        necessitatibus voluptatum praesentium adipisci asperiores perspiciatis, similique alias magnam nemo,
-                        corporis quos! Officia fugiat mollitia optio.
+                        An application where bicycle users (users) can call professional bicycle mechanics to the user's
+                        home to repair damaged bicycles.
                     </div>
                 </div>
                 <a href="#next">
