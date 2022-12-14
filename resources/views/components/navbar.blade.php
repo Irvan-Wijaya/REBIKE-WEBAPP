@@ -56,10 +56,6 @@
                         <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
                     </a>
                 @endif
-
-
-
-
             </div>
         </div>
     </nav>
