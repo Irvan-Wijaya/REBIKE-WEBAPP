@@ -39,6 +39,7 @@
                 @if (Auth::user() != null)
                     <div class="logout d-flex  align-items-center ">
                         @auth
+<<<<<<< Updated upstream
                             <p class="mt-3 me-4">
                                 Welcome, {{ Auth::user()->name }}
                             </p>
@@ -46,6 +47,13 @@
                                 @csrf
                                 <button id="logout" class="btn btn-danger fw-medium">Logout</button>
                             </form>
+=======
+                            <a href="{{ url('profile') }}" style="text-decoration: none; color: black">
+                                <p class="mt-3 me-4">
+                                    Welcome, {{ Auth::user()->name }}
+                                </p>
+                            </a>
+>>>>>>> Stashed changes
                         @endauth
                     </div>
                 @else

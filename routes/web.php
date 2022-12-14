@@ -27,6 +27,10 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/profile', function () {
+    return view('components.profile');
+});
+
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create'])->middleware('auth');
