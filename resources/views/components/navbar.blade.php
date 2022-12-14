@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light py-2 px-3">
+    <nav class="navbar navbar-light p-3">
         <div class="p-0 container-fluid">
             <a class="navbar-brand ms-2" href="{{ url('home') }}">
                 <img src="{{ url('/Images/REBIKE_LOGO.png') }}" alt="" width="100" height="40">

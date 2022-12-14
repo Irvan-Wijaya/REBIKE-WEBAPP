@@ -22,7 +22,7 @@
                     <div class="card w-100 my-4">
                         <div class="card-body">
                             <h4 class="card-title">{{ $post->title }}</h4>
-                            <h6 class="card-subtitle mb-3 text-muted">{{ $post->user->username }}</h6>
+                            <h6 class="card-subtitle mb-3 text-muted fw-normal">{{ $post->user->username }}</h6>
                             <p class="card-text mb-3">{{ Str::limit($post->content, 150) }}</p>
                             <div class="d-flex">
                                 <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
@@ -54,8 +54,8 @@
                             class="rounded-circle" width="75px" height="75px" style="object-fit: cover">
                     </div>
                     <div class="">
-                        <h5 class="card-title fw-bold">Aradhana Indra Daniswmara</h5>
-                        <p class="card-text">aradhanaid</p>
+                        <h5 class="card-title fw-bold">{{ Auth::user()->name }}</h5>
+                        <p class="card-text text-muted">{{ Auth::user()->username }}</p>
                     </div>
                 </a>
                 <div class="card border-0 mb-3">
@@ -67,8 +67,8 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <p class="my-0">Joined Since ...</p>
-                        <p class="my-0"><i class="bi bi-card-heading me-2"></i> 0 Posts</p>
+                        <p class="my-0">Joined Since {{ date_format(date_create(Auth::user()->created_at),"d M Y") }}</p>
+                        <p class="my-0"><i class="bi bi-card-heading me-2"></i> {{ Auth::user()->posts->count() }} Post(s)</p>
                         <p class="my-0"><i class="bi bi-award me-2"></i> 0 Points</p>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">You are not logged in.</h5>
                         <p class="card-text">Login to create post and comment on other posts.</p>
-                        <a type="button" class="btn btn-primary text-white">Login</a>
+                        <a type="button" href="/login" class="btn btn-primary text-white px-4">Login</a>
                     </div>
                 </div>
             @endauth
