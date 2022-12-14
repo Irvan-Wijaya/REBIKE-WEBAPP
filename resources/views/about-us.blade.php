@@ -23,9 +23,7 @@
             </div>
             {{-- Content Left --}}
             <div class="wrapper-left">
-                <lord-icon src="https://cdn.lordicon.com/pithnlch.json" trigger="loop" delay="2000"
-                    colors="primary:#121331,secondary:#37b6ff" style="width:200px;height:200px">
-                </lord-icon>
+                <img src="{{ url('Images/content-img.png', []) }}" alt="">
             </div>
         </div>
 
