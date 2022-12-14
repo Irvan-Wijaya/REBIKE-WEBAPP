@@ -55,6 +55,13 @@
                     <p class="card-text">aradhanaid</p>
                 </div>
             </a>
+            <div class="card">
+                <div class="card-body">
+                    <p class="my-0">Joined Since ...</p>
+                    <p class="my-0"><i class="bi bi-card-list me-2"></i> 0 Posts</p>
+                    <p class="my-0"><i class="bi bi-award me-2"></i> 0 Points</p>
+                </div>
+            </div>
         </div>
 
 
