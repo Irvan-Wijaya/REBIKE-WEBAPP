@@ -2,8 +2,8 @@
 
 @section('content')
     {{-- Content Top --}}
-    <div data-aos="fade-up" class="wrap-content-top d-flex flex-column" style="height: 70vh; margin-left: -100px;">
-        <div class="wrap-content-img " style="border-radius: 30px">
+    <div data-aos="fade-up" class="wrap-content-top d-flex flex-column" style="height: 70vh;">
+        <div class="wrap-content-img align-items-center " style="border-radius: 30px">
             <img src="{{ url('Images/bannerhome.jpg') }}" alt="">
         </div>
         <div class="wrap-content-text fw-bold fs-3 position-absolute p-5 mt-5">
