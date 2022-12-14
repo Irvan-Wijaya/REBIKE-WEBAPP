@@ -15,8 +15,12 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     @include('components.navbar')
     <div class="container my-5">
+
         @yield('content')
     </div>
     @include('components.footer')
@@ -24,6 +28,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        }, 10000);
     </script>
 </body>
 

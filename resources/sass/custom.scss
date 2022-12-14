@@ -40,3 +40,19 @@ ul {
         }
     }
 }
+
+// Loader
+#preloader {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    position: fixed;
+}
+
+#loader {
+    background: white url(../../public/Images/loading4.gif) no-repeat center center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100 ;
+}
