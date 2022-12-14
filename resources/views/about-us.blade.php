@@ -56,7 +56,7 @@
             </div>
 
             <div class="card" style="width: 18rem; border: none;">
-                <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="hover"
+                <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
                     colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
                 </lord-icon>
                 <div class="card-body">

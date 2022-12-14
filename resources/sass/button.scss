@@ -16,6 +16,7 @@
 #sign:hover {
     box-shadow: inset 150px 0 0 0 #37B6FF;
     cursor: pointer;
+    color: white;
 }
 
 #log {
@@ -37,7 +38,7 @@
 }
 
 #logout {
-    background-color: transparent;
+    background-color: #DFE5E9;
     border: none;
     border-radius: 30px;
     text-align: center;

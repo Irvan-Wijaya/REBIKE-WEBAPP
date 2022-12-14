@@ -74,13 +74,16 @@
                             Useful links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">About Us</a>
+                            <a href="{{ url('about-us') }}" class="text-reset">About Us</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Log in</a>
+                            <a href="{{ url('faq') }}" class="text-reset">FAQ</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Sign in</a>
+                            <a href="{{ url('login') }}" class="text-reset">Log in</a>
+                        </p>
+                        <p>
+                            <a href="{{ url('register') }}" class="text-reset">Sign in</a>
                         </p>
                     </div>
                     <!-- Grid column -->
