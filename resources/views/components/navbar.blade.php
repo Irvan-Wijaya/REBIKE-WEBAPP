@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light">
-        <div class="nv container-fluid">
+    <nav class="navbar navbar-light py-2 px-3">
+        <div class="p-0 container-fluid">
             <a class="navbar-brand ms-2" href="{{ url('home') }}">
                 <img src="{{ url('/Images/REBIKE_LOGO.png') }}" alt="" width="100" height="40">
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page"
+                    <a class="nav-link text-dark fw-medium" id="active" aria-current="page"
                         href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
@@ -44,16 +44,16 @@
                             </p>
                             <form action="/logout" method="POST">
                                 @csrf
-                                <button id="logout" class="btn btn-danger fw-bold">Logout</button>
+                                <button id="logout" class="btn btn-danger fw-medium">Logout</button>
                             </form>
                         @endauth
                     </div>
                 @else
                     <a href="{{ url('login') }}">
-                        <button id="log" class="btn btn btn-primary fw-bold" type="button">Log in</button>
+                        <button id="log" class="btn btn btn-primary fw-medium" type="button">Log in</button>
                     </a>
                     <a href="{{ url('register') }}">
-                        <button id="sign" class="btn btn btn-primary fw-bold" type="button">Sign up</button>
+                        <button id="sign" class="btn btn btn-primary fw-medium" type="button">Sign up</button>
                     </a>
                 @endif
 
