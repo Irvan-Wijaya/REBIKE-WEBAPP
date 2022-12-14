@@ -3,6 +3,9 @@ $primary: #37b6ff;
 #active {
     color: $primary;
 }
+.fw-medium{
+    font-weight: 500 !important;
+}
 
 // Navbar Hover
 ul {
@@ -40,7 +43,6 @@ ul {
         }
     }
 }
-
 // Loader
 #preloader {
     background-color: white;

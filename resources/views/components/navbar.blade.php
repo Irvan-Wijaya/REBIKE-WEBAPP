@@ -9,30 +9,30 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light">
-        <div class="nv container-fluid">
+    <nav class="navbar navbar-light p-3">
+        <div class="p-0 container-fluid">
             <a class="navbar-brand ms-2" href="{{ url('home') }}">
                 <img src="{{ url('/Images/REBIKE_LOGO.png') }}" alt="" width="100" height="40">
             </a>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bolder" id="active" aria-current="page"
+                    <a class="nav-link text-dark fw-medium" id="active" aria-current="page"
                         href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
+                    <a class="nav-link text-dark fw-medium" href="#">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('about-us') }}">About Us</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('about-us') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">Store</a>
+                    <a class="nav-link text-dark fw-medium" href="#">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('faq') }}">FAQ</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('faq') }}">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('forum') }}">Forum</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('forum') }}">Forum</a>
                 </li>
             </ul>
             <div class="d-grid gap-2 d-md-block">
@@ -44,16 +44,16 @@
                             </p>
                             <form action="/logout" method="POST">
                                 @csrf
-                                <button id="logout" class="btn btn-danger fw-bold">Logout</button>
+                                <button id="logout" class="btn btn-danger fw-medium">Logout</button>
                             </form>
                         @endauth
                     </div>
                 @else
-                    <a href="{{ url('login') }}" style="text-decoration: none">
-                        <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
+                    <a href="{{ url('login') }}" class="text-decoration-none">
+                        <button id="log" class="btn btn btn-primary fw-medium" type="button">Log in</button>
                     </a>
-                    <a href="{{ url('register') }}" style="text-decoration: none">
-                        <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
+                    <a href="{{ url('register') }}" class="text-decoration-none">
+                        <button id="sign" class="btn btn btn-primary fw-medium" type="button">Sign up</button>
                     </a>
                 @endif
             </div>

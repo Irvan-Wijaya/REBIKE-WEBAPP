@@ -8,12 +8,12 @@
             </h1>
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>
-                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle" width="75px"
+                    <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}" class="rounded-circle" width="75px"
                         height="75px" style="object-fit: cover">
                 </div>
                 <div>
-                    <h5 class="card-title fw-bold">Aradhana Indra Daniswara</h5>
-                    <p class="card-text">aradhanaid</p>
+                    <h5 class="card-title fw-bold">{{ Auth::user()->name }}</h5>
+                    <p class="card-text">{{ Auth::user()->username }}</p>
                 </div>
             </div>
             <form action="/forum/create" method="POST">
