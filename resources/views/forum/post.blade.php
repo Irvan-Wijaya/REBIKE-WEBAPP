@@ -21,7 +21,9 @@
                 </div>
             </div>
             <h1 class="h2 mb-4">{{ $post->title }}</h1>
-            {{ $post->content }}
+
+            {!! $post->content  !!}
+            <h5 class="mt-5">Comments</h5>
 
         </div>
     </div>

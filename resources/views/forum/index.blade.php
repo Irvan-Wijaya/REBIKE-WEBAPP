@@ -21,7 +21,7 @@
                 <a href="/forum/post/{{ $post->slug }}" class="text-decoration-none text-dark">
                     <div class="card w-100 my-4">
                         <div class="card-body">
-                            <h4 class="card-title">{{ $post->title }}</h4>
+                            <h5 class="card-title">{{ $post->title }}</h5>
                             <h6 class="card-subtitle mb-3 text-muted fw-normal">{{ $post->user->username }}</h6>
                             <p class="card-text mb-3">{{ Str::limit($post->content, 150) }}</p>
                             <div class="d-flex">
@@ -40,14 +40,7 @@
         </div>
         <div class="col-4">
             @auth
-                <a href="/forum/create" class="text-decoration-none">
-                    <div class="d-grid mb-3">
-                        <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center"
-                            style="border-radius: 50px" type="button">
-                            <i class="bi bi-plus me-2 h3 my-0"></i><span class="h4 my-0">Create Post</span>
-                        </button>
-                    </div>
-                </a>
+
                 <a class="d-flex align-items-center gap-2 mb-2 text-decoration-none text-dark">
                     <div>
                         <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}"
@@ -59,15 +52,23 @@
                     </div>
                 </a>
                 <div class="card border-0 mb-3">
+                    <a href="/forum/create" class="text-decoration-none">
+                        <div class="mb-3">
+                            <button class="btn btn-primary py-2 px-4 text-white d-flex align-items-center justify-content-center"
+                                style="border-radius: 50px" type="button">
+                                <i class="bi bi-plus h5 me-1 my-0"></i><span class="h5 my-0">Create Post</span>
+                            </button>
+                        </div>
+                    </a>
                     <a class="text-decoration-none text-black options py-2 px-3 rounded" href="/myPost"><i
                             class="bi bi-card-heading me-2"></i>Your Posts</a>
-                            <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i class="bi bi-people me-2"></i>Connections</a>
+                    <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i class="bi bi-people me-2"></i>Connections</a>
                     <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i
                             class="bi bi-gear me-2"></i>Settings</a>
                 </div>
 
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column gap-2">
                         <p class="my-0">Joined Since {{ date_format(date_create(Auth::user()->created_at),"d M Y") }}</p>
                         <p class="my-0"><i class="bi bi-card-heading me-2"></i> {{ Auth::user()->posts->count() }} Post(s)</p>
                         <p class="my-0"><i class="bi bi-award me-2"></i> 0 Points</p>

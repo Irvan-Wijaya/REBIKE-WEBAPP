@@ -49,10 +49,10 @@
                         @endauth
                     </div>
                 @else
-                    <a href="{{ url('login') }}">
+                    <a href="{{ url('login') }}" class="text-decoration-none">
                         <button id="log" class="btn btn btn-primary fw-medium" type="button">Log in</button>
                     </a>
-                    <a href="{{ url('register') }}">
+                    <a href="{{ url('register') }}" class="text-decoration-none">
                         <button id="sign" class="btn btn btn-primary fw-medium" type="button">Sign up</button>
                     </a>
                 @endif
