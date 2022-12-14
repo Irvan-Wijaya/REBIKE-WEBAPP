@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('extra')
+    @vite(['resources/sass/forum.scss'])
+@endsection
 @section('content')
     <div class="row">
         <div class="col">
@@ -23,11 +25,11 @@
                             <h6 class="card-subtitle mb-3 text-muted">{{ $post->user->username }}</h6>
                             <p class="card-text mb-3">{{ Str::limit($post->content, 150) }}</p>
                             <div class="d-flex">
-                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i
+                                <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
                                         class="bi bi-hand-thumbs-up me-2"></i>Like</a>
-                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i
+                                <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
                                         class="bi bi-hand-thumbs-down me-2"></i>Dislike</a>
-                                <a href="#" class="h6 my-0 text-decoration-none text-dark d-block me-3"><i
+                                <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
                                         class="bi bi-chat-left-text me-2"></i>Comments</a>
                             </div>
                         </div>
@@ -37,31 +39,48 @@
 
         </div>
         <div class="col-4">
-            <a href="/forum/create" class="text-decoration-none">
-                <div class="d-grid mb-3">
-                    <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center"
-                        style="border-radius: 50px" type="button">
-                        <i class="bi bi-plus me-2 h3 my-0"></i><span class="h4 my-0">Create Post</span>
-                    </button>
+            @auth
+                <a href="/forum/create" class="text-decoration-none">
+                    <div class="d-grid mb-3">
+                        <button class="btn btn-primary py-3 text-white d-flex align-items-center justify-content-center"
+                            style="border-radius: 50px" type="button">
+                            <i class="bi bi-plus me-2 h3 my-0"></i><span class="h4 my-0">Create Post</span>
+                        </button>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center gap-2 mb-2 text-decoration-none text-dark">
+                    <div>
+                        <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}"
+                            class="rounded-circle" width="75px" height="75px" style="object-fit: cover">
+                    </div>
+                    <div class="">
+                        <h5 class="card-title fw-bold">Aradhana Indra Daniswmara</h5>
+                        <p class="card-text">aradhanaid</p>
+                    </div>
+                </a>
+                <div class="card border-0 mb-3">
+                    <a class="text-decoration-none text-black options py-2 px-3 rounded" href="/myPost"><i
+                            class="bi bi-card-heading me-2"></i>Your Posts</a>
+                    <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i
+                            class="bi bi-gear me-2"></i>Settings</a>
                 </div>
-            </a>
-            <a class="d-flex align-items-center gap-3 mb-4 text-decoration-none text-dark">
-                <div>
-                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle mb-3"
-                        width="75px" height="75px" style="object-fit: cover">
+
+                <div class="card">
+                    <div class="card-body">
+                        <p class="my-0">Joined Since ...</p>
+                        <p class="my-0"><i class="bi bi-card-heading me-2"></i> 0 Posts</p>
+                        <p class="my-0"><i class="bi bi-award me-2"></i> 0 Points</p>
+                    </div>
                 </div>
-                <div class="">
-                    <h5 class="card-title fw-bold">Aradhana Indra Daniswara</h5>
-                    <p class="card-text">aradhanaid</p>
+            @else
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">You are not logged in.</h5>
+                        <p class="card-text">Login to create post and comment on other posts.</p>
+                        <a type="button" class="btn btn-primary text-white">Login</a>
+                    </div>
                 </div>
-            </a>
-            <div class="card">
-                <div class="card-body">
-                    <p class="my-0">Joined Since ...</p>
-                    <p class="my-0"><i class="bi bi-card-list me-2"></i> 0 Posts</p>
-                    <p class="my-0"><i class="bi bi-award me-2"></i> 0 Points</p>
-                </div>
-            </div>
+            @endauth
         </div>
 
 

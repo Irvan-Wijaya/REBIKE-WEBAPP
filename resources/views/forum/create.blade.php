@@ -8,7 +8,7 @@
             </h1>
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>
-                    <img src="{{ asset('storage/profile-image/aradhanaid.png') }}" class="rounded-circle" width="75px"
+                    <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}" class="rounded-circle" width="75px"
                         height="75px" style="object-fit: cover">
                 </div>
                 <div>

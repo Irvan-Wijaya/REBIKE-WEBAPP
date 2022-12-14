@@ -1,0 +1,15 @@
+@import 'app.scss';
+.options{
+    &:hover{
+        background-color: $gray-100;
+    }
+}
+
+.actions{
+    color: $gray-500;
+    font-weight: 400;
+    &:hover{
+        background-color: $gray-100;
+        color: $black;
+    }
+}

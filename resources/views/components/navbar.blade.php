@@ -20,19 +20,19 @@
                         href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">Reservation</a>
+                    <a class="nav-link text-dark fw-medium" href="#">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('about-us') }}">About Us</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('about-us') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="#">Store</a>
+                    <a class="nav-link text-dark fw-medium" href="#">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('faq') }}">FAQ</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('faq') }}">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="{{ url('forum') }}">Forum</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('forum') }}">Forum</a>
                 </li>
             </ul>
             <div class="d-grid gap-2 d-md-block">
@@ -50,10 +50,10 @@
                     </div>
                 @else
                     <a href="{{ url('login') }}">
-                        <button id="log" class="btnn btn btn-primary fw-bold" type="button">Log in</button>
+                        <button id="log" class="btn btn btn-primary fw-bold" type="button">Log in</button>
                     </a>
                     <a href="{{ url('register') }}">
-                        <button id="sign" class="btnn btn btn-primary fw-bold" type="button">Sign up</button>
+                        <button id="sign" class="btn btn btn-primary fw-bold" type="button">Sign up</button>
                     </a>
                 @endif
 
