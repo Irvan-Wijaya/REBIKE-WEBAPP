@@ -12,8 +12,8 @@
                         height="75px" style="object-fit: cover">
                 </div>
                 <div>
-                    <h5 class="card-title fw-bold">Aradhana Indra Daniswara</h5>
-                    <p class="card-text">aradhanaid</p>
+                    <h5 class="card-title fw-bold">{{ Auth::user()->name }}</h5>
+                    <p class="card-text">{{ Auth::user()->username }}</p>
                 </div>
             </div>
             <form action="/forum/create" method="POST">

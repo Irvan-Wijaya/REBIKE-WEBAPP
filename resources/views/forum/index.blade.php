@@ -8,7 +8,7 @@
             <form action="/forum/search" method="POST">
                 @csrf
                 <div class="input-group w-100 ">
-                    <input type="text" class="form-control p-3" style="height: 65px" placeholder="Search Topics"
+                    <input type="text" class="form-control p-3" style="height: 48px" placeholder="Search Topics"
                         aria-label="Search Topics" aria-describedby="button-addon2" name="search"
                         value="{{ request('search') }}">
                     <button class="btn btn-outline-primary px-4" type="submit" id="button-addon2">
@@ -61,6 +61,7 @@
                 <div class="card border-0 mb-3">
                     <a class="text-decoration-none text-black options py-2 px-3 rounded" href="/myPost"><i
                             class="bi bi-card-heading me-2"></i>Your Posts</a>
+                            <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i class="bi bi-people me-2"></i>Connections</a>
                     <a class="text-decoration-none text-black options py-2 px-3 rounded" href=""><i
                             class="bi bi-gear me-2"></i>Settings</a>
                 </div>

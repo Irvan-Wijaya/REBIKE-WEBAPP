@@ -16,4 +16,10 @@ class ForumController extends Controller
     public function create(){
         return view('forum.create');
     }
+
+    public function show(Post $post){
+        return view('forum.post', [
+            'post' => $post
+        ]);
+    }
 }
