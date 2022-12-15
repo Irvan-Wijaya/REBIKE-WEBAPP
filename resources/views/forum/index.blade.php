@@ -4,7 +4,7 @@
     @vite(['resources/sass/forum.scss'])
 @endsection
 @section('content')
-    <div class="row">
+    <div data-aos="fade-up" class="row">
         <div class="col">
             <form action="/forum/search" method="POST">
                 @csrf
@@ -19,7 +19,7 @@
             </form>
 
             @foreach ($posts as $post)
-                <a href="/forum/post/{{ $post->slug }}" class="text-decoration-none text-dark">
+                <a data-aos="fade-up" href="/forum/post/{{ $post->slug }}" class="text-decoration-none text-dark">
                     <div class="card w-100 my-4">
                         <div class="card-body">
                             <div class="d-flex justify-content-between gap-3">
