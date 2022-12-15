@@ -19,9 +19,9 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->foreignId('user_id');
             $table->longText('content');
-            $table->integer('like_count');
-            $table->integer('dislike_count');
-            $table->integer('comment_count');
+            $table->integer('like_count')->default(0);
+            $table->integer('dislike_count')->default(0);
+            $table->integer('comment_count')->default(0);
             $table->timestamps();
         });
     }

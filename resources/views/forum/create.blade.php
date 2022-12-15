@@ -23,9 +23,9 @@
                     <input type="text" class="form-control" id="title" aria-describedby="title" name="title">
                 </div>
                 <div class="mb-3">
-                    <label for="body" class="form-label">Body</label>
-                    <input id="body" type="hidden" name="body" value="{{ old('body') }}">
-                    <trix-editor input="body"></trix-editor>
+                    <label for="content" class="form-label">Content</label>
+                    <input id="content" type="hidden" name="content" value="{{ old('content') }}">
+                    <trix-editor input="content"></trix-editor>
                     @error('body')
                         <div class="alert alert-danger" role="alert">
                             {{ $message }}
