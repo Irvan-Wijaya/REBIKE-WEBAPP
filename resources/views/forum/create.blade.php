@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="row w-100 mx-0 justify-content-center">
+    <div data-aos="fade-up" class="row w-100 mx-0 justify-content-center">
         <div class="col-8">
             <h1 class="mb-4">
                 <a href="/forum" class="text-dark"><i class="bi bi-arrow-left-short me-3"></i></a>Create Post
