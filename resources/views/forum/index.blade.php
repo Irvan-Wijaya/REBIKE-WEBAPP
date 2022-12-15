@@ -22,15 +22,28 @@
                 <a href="/forum/post/{{ $post->slug }}" class="text-decoration-none text-dark">
                     <div class="card w-100 my-4">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between gap-3">
                                 <div class="">
+                                    @auth
+                                        @if (Auth::user()->username === $post->user->username)
+                                            <p class="text-primary mb-1">
+                                                <i class="bi bi-person"></i>
+                                                Your Post
+                                            </p>
+                                        @endif
+                                    @endauth
                                     <h5 class="card-title">{{ $post->title }}</h5>
                                     <h6 class="card-subtitle mb-3 text-muted fw-normal">{{ $post->user->username }}</h6>
                                 </div>
                                 @auth
                                     @if (Auth::user()->id === $post->user_id)
-                                        <div class="text-muted">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                        <div class="text-muted d-flex gap-2">
+                                            <i class="bi bi-pencil-square edit"></i>
+                                            <form action="/form/post/{{ $post->slug }}" method="POST">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button type="submit" class="bi bi-trash3 delete p-0 border-0 bg-white"></button>
+                                            </form>
                                         </div>
                                     @endif
                                 @endauth
@@ -102,8 +115,18 @@
     @if (session()->has('post_create_success'))
         <script>
             Swal.fire({
-                title: 'Success!',
+                title: 'Success',
                 text: '{{ session('post_create_success') }}',
+                icon: 'success',
+                confirmButtonColor: '#37b6ff'
+            })
+        </script>
+    @endif
+    @if (session()->has('post_delete_success'))
+        <script>
+            Swal.fire({
+                title: 'Deleted',
+                text: '{{ session('post_delete_success') }}',
                 icon: 'success',
                 confirmButtonColor: '#37b6ff'
             })

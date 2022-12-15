@@ -13,3 +13,15 @@
         color: $black;
     }
 }
+
+.edit{
+    &:hover{
+        color: $warning;
+    }
+}
+
+.delete{
+    &:hover{
+        color: $danger;
+    }
+}

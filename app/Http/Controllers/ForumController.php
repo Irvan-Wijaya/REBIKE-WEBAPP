@@ -33,6 +33,11 @@ class ForumController extends Controller
 		return redirect('/forum')->with('post_create_success', 'Successfully added a new post');
     }
 
+    public function destroy(Post $post){
+        Post::destroy($post->id);
+        return redirect('/forum')->with('post_delete_success', 'Your post has been deleted');
+    }
+
     public function show(Post $post){
         return view('forum.post', [
             'post' => $post
