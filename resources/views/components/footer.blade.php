@@ -27,7 +27,7 @@
                 <a href="https://www.instagram.com/rebike.business/" class="me-4 link-secondary text-decoration-none">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="me-4 link-secondary text-decoration-none">
+                <a href="https://www.youtube.com/channel/UCwQ045bpXN5rngIjJ6IXM1A" class="me-4 link-secondary text-decoration-none">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
