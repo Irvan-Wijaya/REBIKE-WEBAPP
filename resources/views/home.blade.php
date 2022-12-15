@@ -3,15 +3,8 @@
 @section('content')
     {{-- Content Top --}}
     <div data-aos="fade-up" class="wrap-content-top d-flex flex-column" style="height: 90vh;">
-        <div class="wrap-content-img align-items-center my-5" style="border-radius: 30px">
-            <img src="{{ url('Images/bannerhome.jpg') }}" alt="">
-        </div>
-        <div class="wrap-content-text fw-bold fs-3 position-absolute p-5 mt-5">
-            Hello! <br>
-            Welcome to REBIKE
-            <br><br>
-            The place where you <br>
-            fix your bike.
+        <div class="wrap-content-img">
+            <img class="" src="{{ url('Images/Banner1.png') }}" alt="">
         </div>
     </div>
 

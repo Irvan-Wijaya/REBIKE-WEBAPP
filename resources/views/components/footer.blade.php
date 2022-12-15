@@ -24,7 +24,7 @@
                 <a href="" class="me-4 link-secondary">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="https://www.instagram.com/rebike.business/" class="me-4 link-secondary">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="" class="me-4 link-secondary">
@@ -78,12 +78,6 @@
                         </p>
                         <p>
                             <a href="{{ url('faq') }}" class="text-reset">FAQ</a>
-                        </p>
-                        <p>
-                            <a href="{{ url('login') }}" class="text-reset">Log in</a>
-                        </p>
-                        <p>
-                            <a href="{{ url('register') }}" class="text-reset">Sign in</a>
                         </p>
                     </div>
                     <!-- Grid column -->

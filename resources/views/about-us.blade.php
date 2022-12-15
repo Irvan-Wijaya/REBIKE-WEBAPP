@@ -84,7 +84,7 @@
                             colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
                         </lord-icon>
                         <div class="card-body">
-                            <p class="card-text ms-5">
+                            <p class="card-text" style="margin-left: 65px">
                                 Irvan Wijaya
                             </p>
                         </div>
@@ -95,7 +95,7 @@
                             colors="primary:#121331,secondary:#37b6ff" style="width:250px;height:250px">
                         </lord-icon>
                         <div class="card-body">
-                            <p class="card-text ms-5">
+                            <p class="card-text" style="margin-left: 60px">
                                 Jasson Laurent
                             </p>
                         </div>
