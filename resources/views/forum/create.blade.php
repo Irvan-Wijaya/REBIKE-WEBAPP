@@ -4,7 +4,7 @@
     <div class="row w-100 mx-0 justify-content-center">
         <div class="col-8">
             <h1 class="mb-4">
-                <a href="/forum" class="text-dark"><i class="bi bi-chevron-left me-3"></i></a>Create Post
+                <a href="/forum" class="text-dark"><i class="bi bi-arrow-left-short me-3"></i></a>Create Post
             </h1>
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>

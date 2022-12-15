@@ -27,11 +27,13 @@
                                     <h5 class="card-title">{{ $post->title }}</h5>
                                     <h6 class="card-subtitle mb-3 text-muted fw-normal">{{ $post->user->username }}</h6>
                                 </div>
-                                @if (Auth::user()->id === $post->user_id)
-                                    <div class="">
-                                        <i class="bi bi-three-dots-vertical"></i>
-                                    </div>
-                                @endif
+                                @auth
+                                    @if (Auth::user()->id === $post->user_id)
+                                        <div class="text-muted">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </div>
+                                    @endif
+                                @endauth
                             </div>
                             {!! Str::limit($post->content, 150) !!}
                             <div class="d-flex mt-3">
