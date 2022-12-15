@@ -3,7 +3,8 @@
 @section('content')
     <!--Section: FAQ-->
     <section>
-        <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
+        <h1 class="custom-display-text display-4 mb-3 text-center">FAQ</h1>
+
         <p class="text-center mb-5">
             Find the answers for the most frequently asked questions below
         </p>

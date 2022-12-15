@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ForumController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +38,9 @@ Route::get('/forum/create', [ForumController::class, 'create'])->middleware('aut
 Route::post('/forum/create', [ForumController::class, 'store'])->middleware('auth');
 Route::get('/forum/post/{post:slug}', [ForumController::class, 'show']);
 Route::delete('/form/post/{post:slug}', [ForumController::class, 'destroy']);
+
+// Reservation
+Route::get('/reservation', [ReservationController::class, 'index']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
