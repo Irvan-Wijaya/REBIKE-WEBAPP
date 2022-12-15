@@ -20,7 +20,7 @@
                         href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-medium" href="#">Reservation</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('reservation') }}">Reservation</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-medium" href="{{ url('about-us') }}">About Us</a>

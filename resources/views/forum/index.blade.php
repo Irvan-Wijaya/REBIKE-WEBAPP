@@ -6,6 +6,7 @@
 @section('content')
     <div data-aos="fade-up" class="row">
         <div class="col">
+            <h1 class="custom-display-text display-4 mb-3">Forum</h1>
             <form action="/forum/search" method="POST">
                 @csrf
                 <div class="input-group w-100 ">
@@ -42,7 +43,8 @@
                                             <form action="/form/post/{{ $post->slug }}" method="POST">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="bi bi-trash3 delete p-0 border-0 bg-white"></button>
+                                                <button type="submit"
+                                                    class="bi bi-trash3 delete p-0 border-0 bg-white"></button>
                                             </form>
                                         </div>
                                     @endif
