@@ -23,8 +23,8 @@
             <div class="form-floating">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                     <option selected>Select your bicycle type</option>
-                    <option value="BMX">BMX</option>
-                    <option value="Mountain Bike">Mountain Bike</option>
+                    <option value="9:30">9:30</option>
+                    <option value="Mountain Bike">10:30</option>
                     <option value="Sports Bike">Sports Bike</option>
                     <option value="Folding Bike">Folding Bike</option>
                     <option value="Utlity Bike">Utlity Bike</option>
@@ -129,21 +129,25 @@
             <p>Pick a suitable schedule for the reparation. Our mechanic will arrive on time.</p>
             <div class="form-floating mb-3">
                 <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">ZIP Code</label>
+                <label for="floatingInput">Date</label>
             </div>
             <div class="form-floating">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Select your bicycle type</option>
-                    <option value="BMX">BMX</option>
-                    <option value="Mountain Bike">Mountain Bike</option>
-                    <option value="Sports Bike">Sports Bike</option>
-                    <option value="Folding Bike">Folding Bike</option>
-                    <option value="Utlity Bike">Utlity Bike</option>
-                    <option value="Tandem Bike">Tandem Bike</option>
-
+                    <option selected>Select your schedule time</option>
+                    <option value="830">8:30</option>
+                    <option value="1030">10:30</option>
+                    <option value="1230">12:30</option>
+                    <option value="1430">14:30</option>
+                    <option value="1630">16:30</option>
                 </select>
-                <label for="floatingSelect">Bicycle Type</label>
+                <label for="floatingSelect">Time</label>
             </div>
+        </div>
+
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary text-white p-3">
+                <h5 class="m-0"><i class="bi bi-calendar-check me-3"></i>Reserve</h5>
+            </button>
         </div>
     </div>
 @endsection
