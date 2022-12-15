@@ -30,6 +30,7 @@ Route::get('/faq', function () {
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create'])->middleware('auth');
+Route::post('/forum/create', [ForumController::class, 'store'])->middleware('auth');
 Route::get('/forum/post/{post:slug}', [ForumController::class, 'show']);
 
 Auth::routes();
