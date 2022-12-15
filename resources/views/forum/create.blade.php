@@ -8,8 +8,8 @@
             </h1>
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>
-                    <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}" class="rounded-circle" width="75px"
-                        height="75px" style="object-fit: cover">
+                    <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}"
+                        class="rounded-circle" width="75px" height="75px" style="object-fit: cover">
                 </div>
                 <div>
                     <h5 class="card-title fw-bold">{{ Auth::user()->name }}</h5>
@@ -33,15 +33,10 @@
                     @enderror
                 </div>
 
-
-                <a href="/forum/create" class="text-decoration-none">
-
-                    <button class="btn btn-primary py-3 px-5 text-white d-flex align-items-center justify-content-center"
-                        type="button">
-                        <i class="bi bi-plus me-2 my-0"></i><span class="my-0">Create Post</span>
-                    </button>
-
-                </a>
+                <button class="btn btn-primary py-3 px-5 text-white d-flex align-items-center justify-content-center"
+                    type="submit">
+                    <i class="bi bi-plus me-2 my-0"></i><span class="my-0">Create Post</span>
+                </button>
             </form>
         </div>
     </div>
