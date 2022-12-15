@@ -21,13 +21,13 @@
 
             <!-- Right -->
             <div>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fa-brands fa-tiktok"></i>
+                <a href="https://www.facebook.com/profile.php?id=100087640269431" class="me-4 link-secondary text-decoration-none">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/rebike.business/" class="me-4 link-secondary">
+                <a href="https://www.instagram.com/rebike.business/" class="me-4 link-secondary text-decoration-none">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="me-4 link-secondary">
+                <a href="" class="me-4 link-secondary text-decoration-none">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
