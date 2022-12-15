@@ -33,8 +33,8 @@
                                     </div>
                                 @endif
                             </div>
-                            <p class="card-text mb-3">{!! Str::limit($post->content, 150) !!}</p>
-                            <div class="d-flex">
+                            {!! Str::limit($post->content, 150) !!}
+                            <div class="d-flex mt-3">
                                 <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
                                         class="bi bi-hand-thumbs-up me-2"></i>Like</a>
                                 <a href="#" class="my-0 text-decoration-none d-block py-1 px-3 rounded actions"><i
@@ -51,7 +51,7 @@
         <div class="col-4">
             @auth
 
-                <a class="d-flex align-items-center gap-2 mb-2 text-decoration-none text-dark">
+                <a class="d-flex align-items-center gap-2 mb-3 text-decoration-none text-dark">
                     <div>
                         <img src="{{ Auth::user()->image !== null ? asset('storage/user-profile-image/' . Auth::user()->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}"
                             class="rounded-circle" width="75px" height="75px" style="object-fit: cover">
@@ -65,7 +65,7 @@
                     <a href="/forum/create" class="text-decoration-none">
                         <div class="mb-3">
                             <button
-                                class="btn btn-primary py-2 px-4 text-white d-flex align-items-center justify-content-center"
+                                class="btn btn-primary py-3 px-4 text-white d-flex align-items-center justify-content-center"
                                 style="border-radius: 50px" type="button">
                                 <i class="bi bi-plus h5 me-1 my-0"></i><span class="h5 my-0">Create Post</span>
                             </button>
