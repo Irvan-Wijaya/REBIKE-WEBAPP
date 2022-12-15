@@ -26,7 +26,7 @@
                     <a class="nav-link text-dark fw-medium" href="{{ url('about-us') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark fw-medium" href="#">Store</a>
+                    <a class="nav-link text-dark fw-medium" href="{{ url('store') }}">Store</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark fw-medium" href="{{ url('faq') }}">FAQ</a>

@@ -40,3 +40,5 @@ Route::delete('/form/post/{post:slug}', [ForumController::class, 'destroy']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/store', [App\Http\Controllers\StoreController::class, 'index'])->name('store');
