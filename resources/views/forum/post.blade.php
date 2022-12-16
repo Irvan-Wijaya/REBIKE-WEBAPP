@@ -7,9 +7,11 @@
                 <i class="h5 bi bi-arrow-left-short m-0"></i>
                 <p class="my-0">Back</p>
             </a>
-            @if (Auth::user()->username === $post->user->username)
-                <span class="badge text-bg-primary text-white py-2 px-3 mb-3 fw-normal">Your Post</span>
-            @endif
+            @auth
+                @if (Auth::user()->username === $post->user->username)
+                    <span class="badge text-bg-primary text-white py-2 px-3 mb-3 fw-normal">Your Post</span>
+                @endif
+            @endauth
             <div class="d-flex align-items-center gap-3 mb-4">
                 <div>
                     <img src="{{ $post->user->image !== null ? asset('storage/user-profile-image/' . $post->user->image) : asset('storage/user-profile-image/profile-image-default.jpg') }}"
@@ -22,7 +24,7 @@
             </div>
             <h1 class="h2 mb-4">{{ $post->title }}</h1>
 
-            {!! $post->content  !!}
+            {!! $post->content !!}
             <h5 class="mt-5">Comments</h5>
 
         </div>

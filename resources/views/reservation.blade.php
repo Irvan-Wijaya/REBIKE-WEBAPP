@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="col-7 mx-auto">
+    <div class="col-7 mx-auto" data-aos="fade-up">
         <h1 class="custom-display-text display-4 mb-3">Reservation</h1>
         <p class="mb-5">A mechanic will come to your house to repair your bicycle. Our mechanic will bring their own
             equipment and will fix your bicycle within minimum of 1 hour.</p>
