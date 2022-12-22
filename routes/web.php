@@ -32,6 +32,8 @@ Route::get('/profile', function () {
     return view('components.profile');
 });
 
+Route::get('/editProfile', [App\Http\Controllers\editProfileController::class, 'index']);
+
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
 Route::get('/forum/create', [ForumController::class, 'create'])->middleware('auth');

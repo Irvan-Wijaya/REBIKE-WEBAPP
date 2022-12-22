@@ -13,7 +13,7 @@
                                     style="width: 150px; height: auto; z-index: 1">
                                 <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                                     style="z-index: 1;">
-                                    Edit profile
+                                    <a href="{{ url('editProfile') }}" class="text-decoration-none">Edit profile</a>
                                 </button>
                             </div>
                             <div class="ms-3" style="margin-top: 130px;">
