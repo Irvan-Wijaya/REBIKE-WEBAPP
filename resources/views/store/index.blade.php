@@ -34,7 +34,14 @@
             </button>
         </div>
 
+<<<<<<< HEAD
         <div class="container-store mt-5">
+=======
+        <div class="container mt-5" >
+            <div class="judul text-center">
+                <h1>Products</h1>
+            </div>
+>>>>>>> 60e53399760ac26603edbe17ff7acc77846935bb
             <div class="row" id="ads">
                 <!-- Category Card -->
                 <div class="col-md-4">
@@ -179,4 +186,39 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+
+
+    </div>
+    <div class="container mt-4 d-flex justify-content-between" >
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+>>>>>>> 60e53399760ac26603edbe17ff7acc77846935bb
     @endsection
