@@ -33,192 +33,184 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-<<<<<<< HEAD
         <div class="container-store mt-5">
-=======
-        <div class="container mt-5" >
-            <div class="judul text-center">
-                <h1>Products</h1>
-            </div>
->>>>>>> 60e53399760ac26603edbe17ff7acc77846935bb
-            <div class="row" id="ads">
-                <!-- Category Card -->
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">2018</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$28,000.00</span>
-                            <span class="card-detail-badge">13000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda Accord LX</h5>
+            <div class="container mt-5">
+                <div class="judul text-center">
+                    <h1>Products</h1>
+                </div>
+                <div class="row" id="ads">
+                    <!-- Category Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Low KMS</span>
+                                <span class="card-notify-year">2018</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
                             </div>
-                            <a class="ad-btn" href="#">Buy now</a>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$28,000.00</span>
+                                <span class="card-detail-badge">13000 Kms</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda Accord LX</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Fully-Loaded</span>
-                            <span class="card-notify-year">2017</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$28,000.00</span>
-                            <span class="card-detail-badge">13000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda CIVIC HATCHBACK LS</h5>
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Fully-Loaded</span>
+                                <span class="card-notify-year">2017</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
                             </div>
-                            <a class="ad-btn" href="#">Buy now</a>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$28,000.00</span>
+                                <span class="card-detail-badge">13000 Kms</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda CIVIC HATCHBACK LS</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Price Reduced</span>
-                            <span class="card-notify-year">2018</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$22,000.00</span>
-                            <span class="card-detail-badge">8000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda Accord Hybrid LT</h5>
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Price Reduced</span>
+                                <span class="card-notify-year">2018</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
                             </div>
-                            <a class="ad-btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-store-2 mt-4">
-            <div class="row" id="ads">
-                <!-- Category Card -->
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">2018</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$28,000.00</span>
-                            <span class="card-detail-badge">13000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda Accord LX</h5>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$22,000.00</span>
+                                <span class="card-detail-badge">8000 Kms</span>
                             </div>
-                            <a class="ad-btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Fully-Loaded</span>
-                            <span class="card-notify-year">2017</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$28,000.00</span>
-                            <span class="card-detail-badge">13000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda CIVIC HATCHBACK LS</h5>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda Accord Hybrid LT</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
                             </div>
-                            <a class="ad-btn" href="#">Buy now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Price Reduced</span>
-                            <span class="card-notify-year">2018</span>
-                            <img class="img-fluid"
-                                src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
-                                alt="Alternate Text" />
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Used</span>
-                            <span class="card-detail-badge">$22,000.00</span>
-                            <span class="card-detail-badge">8000 Kms</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>Honda Accord Hybrid LT</h5>
-                            </div>
-                            <a class="ad-btn" href="#">Buy now</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-<<<<<<< HEAD
-=======
 
+            <div class="container-store-2 mt-4">
+                <div class="row" id="ads">
+                    <!-- Category Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Low KMS</span>
+                                <span class="card-notify-year">2018</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
+                            </div>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$28,000.00</span>
+                                <span class="card-detail-badge">13000 Kms</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda Accord LX</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Fully-Loaded</span>
+                                <span class="card-notify-year">2017</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
+                            </div>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$28,000.00</span>
+                                <span class="card-detail-badge">13000 Kms</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda CIVIC HATCHBACK LS</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-    <div class="container mt-4 d-flex justify-content-between" >
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+                    <div class="col-md-4">
+                        <div class="card rounded">
+                            <div class="card-image">
+                                <span class="card-notify-badge">Price Reduced</span>
+                                <span class="card-notify-year">2018</span>
+                                <img class="img-fluid"
+                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
+                                    alt="Alternate Text" />
+                            </div>
+                            <div class="card-image-overlay m-auto">
+                                <span class="card-detail-badge">Used</span>
+                                <span class="card-detail-badge">$22,000.00</span>
+                                <span class="card-detail-badge">8000 Kms</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="ad-title m-auto">
+                                    <h5>Honda Accord Hybrid LT</h5>
+                                </div>
+                                <a class="ad-btn" href="#">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <<<<<<< HEAD=======</div>
+                <div class="container mt-4 d-flex justify-content-between">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
->>>>>>> 60e53399760ac26603edbe17ff7acc77846935bb
-    @endsection
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                >>>>>>> 60e53399760ac26603edbe17ff7acc77846935bb
+            @endsection
