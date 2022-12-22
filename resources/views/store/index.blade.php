@@ -35,6 +35,9 @@
         </div>
 
         <div class="container mt-5" >
+            <div class="judul text-center">
+                <h1>Products</h1>
+            </div>
             <div class="row" id="ads">
             <!-- Category Card -->
             <div class="col-md-4">
