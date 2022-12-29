@@ -26,18 +26,21 @@ Step 3 - Link Laravel Storage to Public
 php artisan storage:link
 ```
 
-Step 4 - Launch Vite
-```
-npm run dev
-```
-
-Step 5 - Start Laravel
+Step 4 - Start Laravel
 ```
 php artisan serve
 ```
 
+## Customization
+You should add additional styling inside of `resources/sass/app.scss`. If you created an additional .scss file inside of `resources/sass` directory, dont forget to import that file to `resources/sass/app.scss`:
+```scss
+@import 'custom';
+```
+
+After you add styling to resources/sass/app.scss, you should run `npm run sass` before starting the laravel.
+
 ## Credits
-This project was made by
+This website was made by
 - Aradhana Indra Daniswara - 2401955132
 - Irvan Wijaya - 2401960782
 - Jasson Laurent - 2401961551
