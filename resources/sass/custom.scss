@@ -1,5 +1,7 @@
 $primary: #37b6ff;
-
+*{
+    font-family: 'Inter', sans-serif;
+}
 .custom-display-text{
     font-family: 'Red Hat Display';
 }
@@ -19,7 +21,6 @@ ul {
             padding: 0 15px;
             color: black;
             text-decoration: none;
-            letter-spacing: 0.5px;
             transition: 0.2s;
         }
     }
