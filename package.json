@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "sass": "sass resources/sass/app.scss public/css/app.css"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
