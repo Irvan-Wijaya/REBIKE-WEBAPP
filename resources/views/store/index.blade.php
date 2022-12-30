@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="wrapper-store">
+    <div data-aos="fade-up" class="wrapper-store">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -33,153 +33,170 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="container-store mt-5">
-            <div class="container mt-5">
-                <div class="judul text-center">
-                    <h1>Products</h1>
-                </div>
-                <div class="row" id="ads">
-                    <!-- Category Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Low KMS</span>
-                                <span class="card-notify-year">2018</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$28,000.00</span>
-                                <span class="card-detail-badge">13000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda Accord LX</h5>
-                                </div>
-                                <a class="ad-btn" href="#">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Fully-Loaded</span>
-                                <span class="card-notify-year">2017</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$28,000.00</span>
-                                <span class="card-detail-badge">13000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda CIVIC HATCHBACK LS</h5>
-                                </div>
-                                <a class="ad-btn" href="#">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Price Reduced</span>
-                                <span class="card-notify-year">2018</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$22,000.00</span>
-                                <span class="card-detail-badge">8000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda Accord Hybrid LT</h5>
+    <section data-aos="fade-up">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                {{-- Card 1 --}}
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <div class="card" style="border-radius: 15px;">
+                        {{-- Image --}}
+                        <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="{{ asset('Images/bannerStore.png') }}"
+                                style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="img-fluid"
+                                alt="Laptop" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        {{-- Title --}}
+                        <div class="card-body pb-0">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><a href="#!" class="text-dark">TREK Roadbike</a></p>
+                                    <p class="small text-muted">Roadbike, Perfomance</p>
                                 </div>
-                                <a class="ad-btn" href="#">Buy now</a>
+                                {{-- Rating --}}
+                                <div>
+                                    <div class="d-flex flex-row justify-content-end mt-1 mb-4 text-danger">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="small text-muted">Rated 5.0/5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-0" />
+                        {{-- Price --}}
+                        <div class="card-body pb-0">
+                            <div class="d-flex justify-content-between">
+                                <p><a href="#!" class="text-dark">$9,900</a></p>
+                                <p class="text-dark">#R001</p>
+                            </div>
+                            <p class="small text-muted">VISA Platinum</p>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                                <a href="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Card 2 --}}
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <div class="card" style="border-radius: 15px;">
+                        {{-- Image --}}
+                        <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="{{ asset('Images/bannerStore2.png') }}"
+                                style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="img-fluid"
+                                alt="Laptop" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        {{-- Title --}}
+                        <div class="card-body pb-0">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><a href="#!" class="text-dark">TREK Mountain Bike</a></p>
+                                    <p class="small text-muted">Mountain Bike, Extreme</p>
+                                </div>
+                                {{-- Rating --}}
+                                <div>
+                                    <div class="d-flex flex-row justify-content-end mt-1 mb-4 text-danger">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="small text-muted">Rated 5.0/5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body pb-0">
+                            {{-- Price --}}
+                            <div class="d-flex justify-content-between">
+                                <p><a href="#!" class="text-dark">$4,180</a></p>
+                                <p class="text-dark">#M001</p>
+                            </div>
+                            <p class="small text-muted">VISA Platinum</p>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                                <a href="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Card 3 --}}
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <div class="card" style="border-radius: 15px;">
+                        {{-- Image --}}
+                        <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="{{ asset('Images/bannerStore3.png') }}"
+                                style="border-top-left-radius: 15px; border-top-right-radius: 15px;" class="img-fluid"
+                                alt="Laptop" />
+                            <a href="#!">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        {{-- Title --}}
+                        <div class="card-body pb-0">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><a href="#!" class="text-dark">TREK Touring Bike</a></p>
+                                    <p class="small text-muted">Touring Bike, Extreme</p>
+                                </div>
+                                {{-- Rating --}}
+                                <div>
+                                    <div class="d-flex flex-row justify-content-end mt-1 mb-4 text-danger">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="small text-muted">Rated 5.0/5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body pb-0">
+                            {{-- Price --}}
+                            <div class="d-flex justify-content-between">
+                                <p><a href="#!" class="text-dark">$4,270</a></p>
+                                <p class="text-dark">#T001</p>
+                            </div>
+                            <p class="small text-muted">VISA Platinum</p>
+                        </div>
+                        <hr class="my-0" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                                <a href="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container-store-2 mt-4">
-                <div class="row" id="ads">
-                    <!-- Category Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Low KMS</span>
-                                <span class="card-notify-year">2018</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$28,000.00</span>
-                                <span class="card-detail-badge">13000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda Accord LX</h5>
-                                </div>
-                                <a class="ad-btn" href="#">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Fully-Loaded</span>
-                                <span class="card-notify-year">2017</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=CAC80HOC021B121001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$28,000.00</span>
-                                <span class="card-detail-badge">13000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda CIVIC HATCHBACK LS</h5>
-                                </div>
-                                <a class="ad-btn" href="#">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card rounded">
-                            <div class="card-image">
-                                <span class="card-notify-badge">Price Reduced</span>
-                                <span class="card-notify-year">2018</span>
-                                <img class="img-fluid"
-                                    src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262"
-                                    alt="Alternate Text" />
-                            </div>
-                            <div class="card-image-overlay m-auto">
-                                <span class="card-detail-badge">Used</span>
-                                <span class="card-detail-badge">$22,000.00</span>
-                                <span class="card-detail-badge">8000 Kms</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="ad-title m-auto">
-                                    <h5>Honda Accord Hybrid LT</h5>
-                                </div>
-                                <a class="ad-btn" href="#">Buy now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endsection
+        </div>
+    </section>
+@endsection

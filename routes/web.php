@@ -33,6 +33,7 @@ Route::get('/profile', function () {
 });
 
 Route::get('/editProfile', [App\Http\Controllers\editProfileController::class, 'index']);
+Route::post('/updateProfile', [App\Http\Controllers\editProfileController::class, 'update']);
 
 // Forum
 Route::get('/forum', [ForumController::class, 'index']);
