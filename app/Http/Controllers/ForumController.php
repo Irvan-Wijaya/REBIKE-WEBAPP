@@ -11,7 +11,7 @@ class ForumController extends Controller
 {
     public function index(){
         return view('forum.index', [
-            'posts' => Post::latest()->paginate(25)->withQueryString()
+            'posts' => Post::latest()->paginate(10)->withQueryString()
         ]);
     }
 
