@@ -52,7 +52,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/store', [App\Http\Controllers\StoreController::class, 'index'])->name('store');
 
 
-// Admin
+// Admin CRUD
 Route::get('/dashboard', [ItemController::class, 'dashboard'])->name('dashboard');
 
 Route::get('/insert', function(){
@@ -64,3 +64,8 @@ Route::get('/update/{id}', [ItemController::class, 'update'])->name('update');
 Route::post('/updatedata/{id}', [ItemController::class, 'updatedata'])->name('updatedata');
 
 Route::get('/delete/{id}', [ItemController::class, 'delete'])->name('delete');
+
+// Admin Template
+Route::get('/welcomeAdmin', function(){
+    return view('admins.welcomeAdmin');
+});
