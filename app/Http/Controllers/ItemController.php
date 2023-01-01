@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
-    public function home(Request $request){
+    public function dashboard(Request $request){
         if($request->has('search')){
             $data = Item::where('name', 'LIKE', '%' .$request->search. '%')->paginate(10);
         }
         else{
             $data = Item::paginate(10);
         }
-        return view('home', compact('data'));
+        return view('dashboard', compact('data'));
     }
 
     public function insertdata(Request $request){
@@ -25,7 +25,7 @@ class ItemController extends Controller
             $data->photo = $request->file('photo')->getClientOriginalName();
             $data->save();
         }
-        return redirect('/')->with("success", "Data has been inserted!");
+        return redirect('/dashboard')->with("success", "Data has been inserted!");
     }
 
     public function update($id){
@@ -36,12 +36,12 @@ class ItemController extends Controller
     public function updatedata(Request $request, $id){
         $data = Item::find($id);
         $data->update($request->all());
-        return redirect('/')->with("success", "Data has been updated!");
+        return redirect('/dashboard')->with("success", "Data has been updated!");
     }
 
     public function delete($id){
         $data = Item::find($id);
         $data->delete();
-        return redirect('/')->with("success", "Data has been deleted!");
+        return redirect('/dashboard')->with("success", "Data has been deleted!");
     }
 }

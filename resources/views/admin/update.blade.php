@@ -40,7 +40,7 @@
                       </div>
 
                     <button type="submit" class="btn btn-success mr-3">Submit</button>
-                    <a href="/" type="cancel" class="btn btn-outline-primary">Cancel</a>
+                    <a href="/dashboard" type="cancel" class="btn btn-outline-primary">Cancel</a>
                   </form>
             </div>
         </div>

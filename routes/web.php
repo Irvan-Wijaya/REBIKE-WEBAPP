@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ForumController;
+use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -49,3 +50,17 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/store', [App\Http\Controllers\StoreController::class, 'index'])->name('store');
+
+
+// Admin
+Route::get('/dashboard', [ItemController::class, 'dashboard'])->name('dashboard');
+
+Route::get('/insert', function(){
+    return view('insert');
+});
+Route::post('/insertdata', [ItemController::class, 'insertdata'])->name('insertdata');
+
+Route::get('/update/{id}', [ItemController::class, 'update'])->name('update');
+Route::post('/updatedata/{id}', [ItemController::class, 'updatedata'])->name('updatedata');
+
+Route::get('/delete/{id}', [ItemController::class, 'delete'])->name('delete');
