@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('price');
             $table->enum('category', ["Bicycle", "Spare Parts", "Accessories"]);
             $table->string('itemcode');
-            $table->string('desc');
             $table->timestamps();
         });
     }

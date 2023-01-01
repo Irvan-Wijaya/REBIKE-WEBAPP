@@ -1,4 +1,4 @@
-@extends('template')
+@extends('admins.adminlayout')
 
 @section('title', 'Dashboard')
 
@@ -8,7 +8,7 @@
 
 <div class="row g-3 mb-4 mt-0.5">
     <div class="col">
-        <form action="/" method="GET">
+        <form action="/dashboard" method="GET">
             <input type="search" name="search" class="form-control" placeholder="Search Data">
         </form>
     </div>

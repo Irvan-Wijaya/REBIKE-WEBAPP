@@ -56,7 +56,7 @@ Route::get('/store', [App\Http\Controllers\StoreController::class, 'index'])->na
 Route::get('/dashboard', [ItemController::class, 'dashboard'])->name('dashboard');
 
 Route::get('/insert', function(){
-    return view('insert');
+    return view('admins.insert');
 });
 Route::post('/insertdata', [ItemController::class, 'insertdata'])->name('insertdata');
 

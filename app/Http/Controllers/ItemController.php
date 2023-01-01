@@ -14,7 +14,7 @@ class ItemController extends Controller
         else{
             $data = Item::paginate(10);
         }
-        return view('dashboard', compact('data'));
+        return view('admins.dashboard', compact('data'));
     }
 
     public function insertdata(Request $request){
@@ -30,7 +30,7 @@ class ItemController extends Controller
 
     public function update($id){
         $data = Item::find($id);
-        return view('update', compact('data'));
+        return view('admins.update', compact('data'));
     }
 
     public function updatedata(Request $request, $id){
@@ -39,9 +39,8 @@ class ItemController extends Controller
         return redirect('/dashboard')->with("success", "Data has been updated!");
     }
 
-    public function delete($id){
-        $data = Item::find($id);
-        $data->delete();
+    public function delete(Item $item){
+        Item::destroy($item->id);
         return redirect('/dashboard')->with("success", "Data has been deleted!");
     }
 }
