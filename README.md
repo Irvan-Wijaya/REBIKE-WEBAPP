@@ -5,6 +5,7 @@ REBIKE is a bike service application where user can call a REBIKE Mechanic to re
 To run this project, you will need:
 1. [NodeJS](https://nodejs.org/en/download/current/)
 2. [Composer](https://getcomposer.org/download/)
+3. [MySQL](https://www.phpmyadmin.net/downloads/)
 
 ## Configuration
 Make sure to create a mySQL database with the name `rebike-webapp`. This database name can be found in `.env`
